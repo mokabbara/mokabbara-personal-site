@@ -15,10 +15,10 @@
   </div>
 
   <header class="topbar">
-    <a class="brand" href="#top">
+    <button class="brand brand-button" type="button" onclick="openAbout()" aria-label="Open about Mohamad">
       <img src="assets/images/profile.jpg" alt="Mohamad Kabbara profile photo" />
       <strong>Mohamad Kabbara</strong>
-    </a>
+    </button>
     <nav>
       <a href="#practice">Practice</a>
       <a href="#energy">Energy</a>
@@ -39,15 +39,15 @@
         <div class="hero-actions">
           <a class="btn dark" href="#practice">Explore the work</a>
           <a class="btn light" href="#archive">Open archive</a>
-          <a class="btn light" href="#contact">Contact</a>
+          <button class="btn light" type="button" onclick="openAbout()">About Mohamad</button>
         </div>
       </div>
 
-      <aside class="portrait-panel">
+      <aside class="portrait-panel" onclick="openAbout()" role="button" tabindex="0" onkeypress="if(event.key==='Enter'){openAbout()}" aria-label="Open about Mohamad">
         <img class="portrait" src="assets/images/profile.jpg" alt="Mohamad Kabbara" />
         <div class="portrait-text">
           <span>The Hague · Europe · MENA · GCC</span>
-          <strong>Infrastructure, policy and visual culture as one connected practice.</strong>
+          <strong>Click to read a short professional profile.</strong>
         </div>
       </aside>
     </section>
@@ -67,26 +67,10 @@
       </div>
 
       <div class="practice-grid">
-        <article>
-          <span>01</span>
-          <h3>Energy and Infrastructure</h3>
-          <p>EV charging, LNG, hydrogen ready sites, mobility hubs, grid coordination and HSSE delivery governance.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Architecture and Urbanism</h3>
-          <p>Buildings, cities, spatial narratives, adaptive reuse and development portfolios across Europe, MENA, the GCC and Africa.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>Policy and Research</h3>
-          <p>Quarry governance, agriculture corridors, sustainability, urban resilience and implementation focused research.</p>
-        </article>
-        <article>
-          <span>04</span>
-          <h3>Painting and Visual Thought</h3>
-          <p>Memory, Tripoli, energy, power, identity, social contradiction and material texture.</p>
-        </article>
+        <article><span>01</span><h3>Energy and Infrastructure</h3><p>EV charging, LNG, hydrogen ready sites, mobility hubs, grid coordination and HSSE delivery governance.</p></article>
+        <article><span>02</span><h3>Architecture and Urbanism</h3><p>Buildings, cities, spatial narratives, adaptive reuse and development portfolios across Europe, MENA, the GCC and Africa.</p></article>
+        <article><span>03</span><h3>Policy and Research</h3><p>Quarry governance, agriculture corridors, sustainability, urban resilience and implementation focused research.</p></article>
+        <article><span>04</span><h3>Painting and Visual Thought</h3><p>Memory, Tripoli, energy, power, identity, social contradiction and material texture.</p></article>
       </div>
     </section>
 
@@ -153,37 +137,64 @@
 
     <section class="section leusi" id="leusi">
       <div class="large-card">
-        <div>
-          <span class="label">Founder initiative</span>
-          <h2>LEUSI, safety as social infrastructure.</h2>
-        </div>
-        <div>
-          <p>LEUSI is a founder initiative focused on HSSE awareness, worker certification, safety leadership and institutional capacity building, connecting European safety standards with frontline realities in Lebanon and future regional contexts.</p>
-          <a class="btn dark" href="https://leusi.org" target="_blank" rel="noopener">Visit LEUSI</a>
-        </div>
+        <div><span class="label">Founder initiative</span><h2>LEUSI, safety as social infrastructure.</h2></div>
+        <div><p>LEUSI is a founder initiative focused on HSSE awareness, worker certification, safety leadership and institutional capacity building, connecting European safety standards with frontline realities in Lebanon and future regional contexts.</p><a class="btn dark" href="https://leusi.org" target="_blank" rel="noopener">Visit LEUSI</a></div>
       </div>
     </section>
 
     <section class="section contact" id="contact">
       <div class="large-card contact-card">
-        <div>
-          <span class="label">Contact</span>
-          <h2>Open to strategic roles, partnerships and institutional collaborations.</h2>
-          <p>Based in The Hague and working across European and MENA contexts, with a focus on energy transition, infrastructure delivery, public affairs, visual culture and social impact.</p>
-        </div>
-        <div class="links">
-          <a href="mailto:mo@mokabbara.com">mo@mokabbara.com</a>
-          <a href="https://www.linkedin.com/in/mokabbara/" target="_blank" rel="noopener">LinkedIn profile</a>
-          <a href="https://leusi.org" target="_blank" rel="noopener">LEUSI initiative</a>
-          <a href="#" aria-disabled="true">Download CV coming soon</a>
-        </div>
+        <div><span class="label">Contact</span><h2>Open to strategic roles, partnerships and institutional collaborations.</h2><p>Based in The Hague and working across European and MENA contexts, with a focus on energy transition, infrastructure delivery, public affairs, visual culture and social impact.</p></div>
+        <div class="links"><a href="mailto:mo@mokabbara.com">mo@mokabbara.com</a><a href="https://www.linkedin.com/in/mokabbara/" target="_blank" rel="noopener">LinkedIn profile</a><a href="https://leusi.org" target="_blank" rel="noopener">LEUSI initiative</a><a href="#" aria-disabled="true">Download CV coming soon</a></div>
       </div>
     </section>
   </main>
+
+  <div id="aboutModal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" onclick="closeAbout()"></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="aboutTitle">
+      <button class="modal-close" type="button" onclick="closeAbout()" aria-label="Close about pop up">×</button>
+      <div class="modal-layout">
+        <img src="assets/images/profile.jpg" alt="Mohamad Kabbara portrait" />
+        <div>
+          <span class="label">About Mohamad</span>
+          <h2 id="aboutTitle">Energy transition, infrastructure and public value.</h2>
+          <p>Mohamad Kabbara is an energy transition and infrastructure professional based in The Hague, working across EV mobility, LNG, hydrogen ready infrastructure, urban transformation, public policy and social impact.</p>
+          <p>With a foundation in architecture and urban design, his work bridges technical delivery, stakeholder governance and public value across Europe, MENA, the GCC and Africa. His practice connects infrastructure execution with human meaning, from multi energy programs and mobility hubs to visual storytelling, policy research and LEUSI, his safety focused social impact initiative.</p>
+          <div class="modal-actions">
+            <a class="btn dark" href="mailto:mo@mokabbara.com">Contact</a>
+            <a class="btn light" href="https://www.linkedin.com/in/mokabbara/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer>
     <span>© 2026 Mohamad Kabbara</span>
     <span>Energy · Cities · Policy · Visual Thought</span>
   </footer>
+
+  <script>
+    function openAbout() {
+      const modal = document.getElementById('aboutModal');
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('modal-open');
+    }
+
+    function closeAbout() {
+      const modal = document.getElementById('aboutModal');
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('modal-open');
+    }
+
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeAbout();
+      }
+    });
+  </script>
 </body>
 </html>

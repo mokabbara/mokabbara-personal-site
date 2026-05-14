@@ -1,3 +1,3 @@
 # mokabbara-personal-site
 
-Version 6. Adds profile photo, blurred atmospheric background images and refined headline.
+Version 7. Adds clickable profile photo and About Mohamad pop up.
