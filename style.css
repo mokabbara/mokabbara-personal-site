@@ -8,7 +8,7 @@
   --olive-soft: #dfe6d4;
   --clay: #d9b8a7;
   --line: rgba(36,37,33,0.12);
-  --glass: rgba(255,255,255,0.72);
+  --glass: rgba(255,255,255,0.12);
   --shadow: 0 30px 90px rgba(36,37,33,0.08);
 }
 
@@ -76,7 +76,7 @@ button {
   top: 0;
   z-index: 30;
   background: rgba(255,255,255,0.09);
-  backdrop-filter: blur(40px);
+  backdrop-filter: blur(70px);
   border-bottom: 1px solid var(--line);
 }
 
