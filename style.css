@@ -677,40 +677,6 @@ footer {
 .painting-teaser img:first-child { grid-row: span 2; height: 232px; }
 @media (hover: none) { .flip-card:active .flip-inner { transform: rotateY(180deg); } .flip-front { box-shadow: 0 0 0 1px rgba(255,255,255,0.9), 0 24px 90px rgba(96,114,77,0.12); } }
 @media (max-width: 720px) { .practice-card.flip-card, .flip-inner, .flip-face { min-height: 420px; } .policy-covers img { height: 180px; } }
-.flip-practice-grid .flip-front span {
-  font-size: 56px !important;
-  line-height: 0.9 !important;
-  letter-spacing: -0.06em !important;
-  margin-bottom: 58px !important;
-  opacity: 0.85 !important;
-}
-.energy-card .flip-front {
-  background:
-    radial-gradient(circle at 18% 18%, rgba(255, 80, 170, 0.68), transparent 42%),
-    radial-gradient(circle at 86% 84%, rgba(40, 170, 255, 0.70), transparent 46%),
-    rgba(255,255,255,0.56) !important;
-}
-
-.architecture-card .flip-front {
-  background:
-    radial-gradient(circle at 18% 22%, rgba(70, 190, 255, 0.66), transparent 42%),
-    radial-gradient(circle at 84% 82%, rgba(85, 255, 170, 0.62), transparent 46%),
-    rgba(255,255,255,0.56) !important;
-}
-
-.policy-card .flip-front {
-  background:
-    radial-gradient(circle at 18% 22%, rgba(85, 255, 170, 0.62), transparent 42%),
-    radial-gradient(circle at 86% 82%, rgba(255, 235, 70, 0.66), transparent 46%),
-    rgba(255,255,255,0.56) !important;
-}
-
-.painting-card .flip-front {
-  background:
-    radial-gradient(circle at 18% 22%, rgba(255, 230, 65, 0.66), transparent 42%),
-    radial-gradient(circle at 86% 82%, rgba(255, 90, 185, 0.66), transparent 46%),
-    rgba(255,255,255,0.56) !important;
-}
 .flip-card:hover .flip-face,
 .flip-card:focus .flip-face,
 .flip-card:focus-within .flip-face {
