@@ -1,3 +1,3 @@
 # mokabbara-personal-site
 
-Version 9. Replaces CV with 2026 version and adds new personal painting works to the visual section.
+Version 10. Interactive glass flip cards for practice areas, policy PDF covers and card visuals.
