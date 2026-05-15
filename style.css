@@ -625,3 +625,11 @@ footer {
     flex-direction: column;
   }
 }
+
+
+.note {
+  font-size: 14px;
+  color: var(--muted);
+  opacity: 0.78;
+  margin-top: 10px;
+}

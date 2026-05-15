@@ -1,3 +1,3 @@
 # mokabbara-personal-site
 
-Version 8. Updated positioning copy, metrics, About pop up, footer and CV download link.
+Version 9. Replaces CV with 2026 version and adds new personal painting works to the visual section.
