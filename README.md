@@ -1,3 +1,3 @@
 # mokabbara-personal-site
 
-Version 7. Adds clickable profile photo and About Mohamad pop up.
+Version 8. Updated positioning copy, metrics, About pop up, footer and CV download link.
