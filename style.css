@@ -75,7 +75,7 @@ button {
   position: sticky;
   top: 0;
   z-index: 30;
-  background: rgba(2255,255,255,0.55);
+  background: rgba(2255,255,255,0.38);
   backdrop-filter: blur(18px);
   border-bottom: 1px solid var(--line);
 }
