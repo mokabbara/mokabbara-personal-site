@@ -1,3 +1,3 @@
 # mokabbara-personal-site
 
-Version 10. Interactive glass flip cards for practice areas, policy PDF covers and card visuals.
+Version 11. Brand audit update with stronger positioning, hero metrics, visible identity, delivery cases, credentials bar, improved LEUSI framing and stronger contact section.
