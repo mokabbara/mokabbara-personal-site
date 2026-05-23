@@ -1192,9 +1192,9 @@ footer {
   }
 }
 .energy-video-breaker {
-  width: 100%;
-  height: clamp(340px, 42vw, 680px);
-  margin: 34px 0 22px;
+  width: min(1180px, calc(100% - 12vw));
+  height: clamp(260px, 32vw, 520px);
+  margin: 34px auto 22px;
   overflow: hidden;
   border-radius: 34px;
   border: 1px solid rgba(255,255,255,0.86);
@@ -1219,8 +1219,15 @@ footer {
 }
 
 @media (max-width: 720px) {
+
   .energy-video-breaker {
-    height: 300px;
+
+    width: calc(100% - 40px);
+
+    height: 220px;
+
     border-radius: 26px;
+
   }
+
 }
