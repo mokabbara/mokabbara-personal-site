@@ -1044,20 +1044,20 @@ footer {
   z-index: 2;
 }
 
-.energy-card .flip-front:after
-  background-image: url("assets/images/energy-and-infrastructure.png");
+.energy-card .flip-front:after {
+  background-image: url("assets/images/energy-field-team.jpeg");
 }
 
-.architecture-card .flip-front:after
-  background-image: url("assets/images/architecture-and-urbanism.png");
+.architecture-card .flip-front:after {
+  background-image: url("assets/images/architecture-striped-building.jpeg");
 }
 
-.policy-card .flip-front:after
-  background-image: url("assets/images/policy-and-research.png");
+.policy-card .flip-front:after {
+  background-image: url("assets/images/a-cement.jpeg");
 }
 
-.painting-card .flip-front:after
-  background-image: url("assets/images/painting-and-visual-thought.png");
+.painting-card .flip-front:after {
+  background-image: url("assets/images/p-urban.jpeg");
 }
 
 .flip-front,
