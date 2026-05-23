@@ -841,3 +841,174 @@ footer {
     padding: 30px;
   }
 }
+
+
+/* V14 clean logos and page breakers */
+.logo-marquee-section {
+  padding: 30px 0 22px;
+  overflow: hidden;
+  border-top: 1px solid rgba(36,37,33,0.06);
+  border-bottom: 1px solid rgba(36,37,33,0.06);
+  background:
+    radial-gradient(circle at 12% 40%, rgba(129,196,255,0.10), transparent 28%),
+    radial-gradient(circle at 88% 65%, rgba(217,184,167,0.10), transparent 30%),
+    rgba(255,255,255,0.32);
+  backdrop-filter: blur(16px);
+}
+
+.logo-marquee-label {
+  margin: 0 auto 16px;
+  max-width: 1180px;
+  padding: 0 6vw;
+  color: var(--olive);
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 800;
+  opacity: 0.82;
+}
+
+.logo-marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.logo-marquee:before,
+.logo-marquee:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 18vw;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.logo-marquee:before {
+  left: 0;
+  background: linear-gradient(90deg, rgba(250,249,244,0.98), rgba(250,249,244,0));
+}
+
+.logo-marquee:after {
+  right: 0;
+  background: linear-gradient(270deg, rgba(250,249,244,0.98), rgba(250,249,244,0));
+}
+
+.logo-track {
+  display: flex;
+  align-items: center;
+  gap: 76px;
+  width: max-content;
+  animation: logoMarquee 58s linear infinite;
+  will-change: transform;
+}
+
+.logo-marquee:hover .logo-track {
+  animation-play-state: paused;
+}
+
+.logo-track img {
+  height: 44px;
+  width: 158px;
+  object-fit: contain;
+  opacity: 0.82;
+  filter: grayscale(1) contrast(1.25) brightness(0.68);
+  transition: opacity 0.3s ease, filter 0.3s ease, transform 0.3s ease;
+}
+
+.logo-track img:hover {
+  opacity: 1;
+  filter: grayscale(1) contrast(1.35) brightness(0.48);
+  transform: translateY(-2px);
+}
+
+@keyframes logoMarquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.visual-breaker {
+  width: 100%;
+  margin: 70px 0 22px;
+  overflow: hidden;
+  border-top: 1px solid rgba(36,37,33,0.06);
+  border-bottom: 1px solid rgba(36,37,33,0.06);
+  background: rgba(255,255,255,0.42);
+}
+
+.visual-breaker img {
+  display: block;
+  width: 100%;
+  height: clamp(300px, 38vw, 620px);
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.92;
+  filter: saturate(0.72) contrast(0.96);
+}
+
+@media (max-width: 720px) {
+  .logo-track {
+    gap: 46px;
+    animation-duration: 42s;
+  }
+
+  .logo-track img {
+    height: 34px;
+    width: 122px;
+  }
+
+  .logo-marquee-label {
+    padding: 0 24px;
+  }
+
+  .visual-breaker {
+    margin: 46px 0 12px;
+  }
+
+  .visual-breaker img {
+    height: 280px;
+  }
+}
+
+
+/* Exact page breaker placement V17 */
+.visual-breaker {
+  width: 100%;
+  margin: 72px 0 28px;
+  overflow: hidden;
+  border-top: 1px solid rgba(36,37,33,0.06);
+  border-bottom: 1px solid rgba(36,37,33,0.06);
+  background: rgba(255,255,255,0.42);
+}
+
+.visual-breaker img {
+  display: block;
+  width: 100%;
+  height: clamp(320px, 40vw, 640px);
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.94;
+  filter: saturate(0.82) contrast(0.98);
+}
+
+.breaker-one {
+  margin-top: 54px;
+  margin-bottom: 46px;
+}
+
+.breaker-two {
+  margin-top: 58px;
+  margin-bottom: 46px;
+}
+
+@media (max-width: 720px) {
+  .visual-breaker {
+    margin: 44px 0 24px;
+  }
+
+  .visual-breaker img {
+    height: 280px;
+  }
+}
