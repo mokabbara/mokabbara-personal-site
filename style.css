@@ -1192,11 +1192,11 @@ footer {
   }
 }
 .energy-video-breaker {
-  width: min(1180px, calc(100% - 12vw));
-  height: clamp(260px, 32vw, 520px);
-  margin: 34px auto 22px;
+  width: min(920px, calc(100% - 12vw));
+  height: clamp(220px, 26vw, 420px);
+  margin: 30px auto 20px;
   overflow: hidden;
-  border-radius: 34px;
+  border-radius: 30px;
   border: 1px solid rgba(255,255,255,0.86);
   background: rgba(255,255,255,0.42);
   box-shadow: var(--shadow);
