@@ -1254,3 +1254,40 @@ footer {
     width: calc(100% - 40px);
   }
 }
+/* Force energy section metrics and credentials to follow video width */
+.energy .metrics {
+  width: min(920px, calc(100% - 12vw)) !important;
+  max-width: 920px !important;
+  margin: 18px auto 0 !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 14px !important;
+}
+
+.energy .credentials-bar {
+  width: min(920px, calc(100% - 12vw)) !important;
+  max-width: 920px !important;
+  margin: 22px auto 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+}
+
+@media (max-width: 900px) {
+  .energy .metrics {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .energy .metrics,
+  .energy .credentials-bar {
+    width: calc(100% - 40px) !important;
+    max-width: none !important;
+  }
+
+  .energy .metrics {
+    grid-template-columns: 1fr !important;
+  }
+}
