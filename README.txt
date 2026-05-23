@@ -1,0 +1,1 @@
+Upload index.html and style.css to the site root. Upload the new assets folders into assets/images and assets/gallery. Existing website assets are not duplicated here. Keep your current assets folder in GitHub.
